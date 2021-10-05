@@ -20,6 +20,6 @@ public class TradeTest
         {
 
             Throwable exception = assertThrows(IllegalArgumentException.class,()->ay.setPrice(-15.25));
-            assertEquals("Price value must be positive",exception.getMessage());
+            assertEquals("Price value can not be negative",exception.getMessage());
         }
     }
